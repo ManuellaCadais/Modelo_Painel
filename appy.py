@@ -126,7 +126,7 @@ if not st.session_state.password_correct:
         
         pwd = st.text_input("Senha de Acesso:", type="password")
         if st.button("Entrar no Painel"):
-            if pwd == "mengo" or pwd == "six2025": 
+            if pwd == "cei2026" or pwd == "six2025": 
                 st.session_state.password_correct = True
                 st.rerun()
             else:
@@ -428,4 +428,5 @@ all_sels = (sel_planos or sel_fat or sel_mp or sel_impostos or sel_custos or
 if not all_sels:
     col1, col2, col3 = st.columns([1,4,1])
     with col2:
+
         st.warning("👈 Selecione indicadores no menu lateral para construir sua análise.")
