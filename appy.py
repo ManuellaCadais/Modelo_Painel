@@ -108,8 +108,8 @@ def set_bg(image_file):
     except:
         pass
 
-# Tenta carregar a imagem de fundo
-set_bg('background.jpg') 
+# Tenta carregar a imagem de fundo (usando a imagem 1 fornecida)
+set_bg('image_1.png')
 
 # ==========================================================
 # 2. SEGURANÇA
@@ -208,7 +208,8 @@ df_base, df_planos = generate_fake_data()
 # ==========================================================
 with st.sidebar:
     try:
-        st.image("logo.jpg", width=160) 
+        # UPDATE: Usando a nova logo dourada (image_4.png)
+        st.image("image_4.png", width=160) 
     except:
         # Alteração de Texto: Fallback caso não tenha logo
         st.markdown(f"<h2 style='text-align: center; color: {SECONDARY_COLOR}'>Centro Esportivo<br>Integrado</h2>", unsafe_allow_html=True)
